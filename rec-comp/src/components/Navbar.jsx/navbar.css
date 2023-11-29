@@ -1,0 +1,69 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(33, 33, 170)
+}
+.container{
+    width:1400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.menu_title{
+    color: white;
+}
+.menu_title:hover{
+    cursor: pointer;
+    color:red
+}
+
+.option{
+    position: relative;
+    transition: 0.5s ease all;
+}
+.option_menu{
+    position: absolute;
+    /* left: 0; */
+    /* top:30px; */
+    border: 1px solid #cecece;
+    background-color: rgb(204, 165, 240);
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:max-content;
+    text-align: start;
+    border-radius: 10px;  
+    animation: slideDown 0.3s ease-in;
+    z-index: -10;
+}
+.option_menu_item{
+    color:black
+}
+.option_menu_item:hover{
+    color:green;
+}
+.option_none{
+    display: none;
+}
+
+
+@keyframes slideDown {
+    from {
+      top:-100px;
+    }
+  
+    to {
+      top:100%;
+    }
+  }
