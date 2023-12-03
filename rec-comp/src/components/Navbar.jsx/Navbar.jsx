@@ -15,8 +15,8 @@ const [open,setOpen] = useState(false)
                     <div className={open?"option_menu":"option_none"}>
                         <span className='option_menu_item'>Boy Item</span>
                         <span className='option_menu_item'>Girl Item</span>
-                        <span className='option_menu_item'>Men Item</span>
-                        <span className='option_menu_item'>Women Item</span>
+                        <span className='option_menu_item'>Men's Item</span>
+                        <span className='option_menu_item'>Women's Item</span>
                     </div>
                     
                 </div>
